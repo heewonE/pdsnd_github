@@ -18,7 +18,7 @@ def get_filters():
         selected_month (str): 필터링할 월 이름 또는 "all" (모든 월)
         selected_day (str): 필터링할 요일 이름 또는 "all" (모든 요일)
     """
-    print('안녕하세요! 미국 자전거 공유 데이터를 탐색해봅시다!')
+    print('미국 자전거 공유 데이터를 탐색시작!')
 
     selected_city = ""
     city_names = list(CITY_DATA.keys())  # CITY_DATA 딕셔너리의 키(도시 이름)들을 리스트로 변환
