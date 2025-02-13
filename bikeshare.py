@@ -65,14 +65,14 @@ def load_data(selected_city, selected_month, selected_day):
 
     if (selected_month == 'all'):
         if (selected_day == 'all'):
-            df_filtered = df_city  # 모든 월과 요일을 포함
+            df_filtered = df_city
         else:
-            df_filtered = df_city[df_city['Day'] == selected_day]  # 모든 월, 특정 요일
+            df_filtered = df_city[df_city['Day'] == selected_day]
     else:
         if (selected_day == 'all'):
-            df_filtered = df_city[df_city['Month'] == selected_month]  # 특정 월, 모든 요일
+            df_filtered = df_city[df_city['Month'] == selected_month]
         else:
-            df_filtered = df_city[(df_city['Month'] == selected_month) & (df_city['Day'] == selected_day)]  # 특정 월과 요일
+            df_filtered = df_city[(df_city['Month'] == selected_month) & (df_city['Day'] == selected_day)]
 
     return df_filtered
 
