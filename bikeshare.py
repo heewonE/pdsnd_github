@@ -14,7 +14,7 @@ def get_filters():
     사용자로부터 분석할 도시, 월, 요일을 입력받습니다.
 
     Returns:
-        selected_city (str): 분석할 도시 이름
+        selected_city (str): 분석할 도시 이름 하나
         selected_month (str): 필터링할 월 이름 또는 "all" (모든 월)
         selected_day (str): 필터링할 요일 이름 또는 "all" (모든 요일)
     """
